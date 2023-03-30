@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="loginPage">
+      <p>< h1>  <h1>RAD Co.</h1> < /h1> </p>
+      <p class="lorem">Lorem ipsum, dolor sit amet consectetur alias rem repellat corrupti maiores blanditiis ipsa consequatur id dignissimos dolore minima quod libero sit?</p>
+      <img src="./images/cbt image.png" alt="">
+      <div class="portalDiv">
+        <h2>Student Portal</h2>
+        <input id="fName" type="text" placeholder="First name" required />
+        <input id="number" type="text" placeholder="Matric No" required />
+        <button class="start" id="startBtn">Login</button>
+      </div>
+    </main>
+    <script>
+
+      // LOG IN
+
+let startBtn = document.getElementById("startBtn");
+let fName = document.getElementById("fName");
+let lName = document.getElementById("lName");
+let logIn = document.querySelector(".loginPage");
+
+startBtn.addEventListener("click", function () {
+  if (fName.value && number.value) {
+    window.location.href = "landing.html"
+  } else {
+    alert("Enter your student details");
+  }
+});
+    </script>
+  </body>
+</html>
